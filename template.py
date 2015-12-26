@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# Filename: hello.py
+# Filename: .py
 
-print('Hello World!')
