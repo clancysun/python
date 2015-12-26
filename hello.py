@@ -2,5 +2,11 @@
 # -*- coding: utf-8 -*-
 # Filename: hello.py
 
+'''
+这是多行注释，用三个单引号
+这是多行注释，用三个单引号
+这是多行注释，用三个单引号
+'''
+# 这是一个注释
 print('Hello World!')
 print("Hello, Python!");
