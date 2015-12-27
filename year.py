@@ -21,5 +21,3 @@ if (year % 4) == 0:
 else:
     print('{} 不是闰年'.format(year))
 
-
-
