@@ -43,3 +43,10 @@ hasattr(emp1, 'age')    # 如果存在 'age' 属性返回 True
 setattr(emp1, 'age', 8)    # 添加 'age' 属性的值为 8
 getattr(emp1, 'age')    # 返回 'age' 属性的值
 delattr(emp1, 'age')    # 删除属性 'age'
+
+# 内置类属性调用
+print("Employee.__doc__: {}".format(Employee.__doc__))
+print("Employee.__name__: {}".format(Employee.__name__))
+print("Employee.__module__: {}".format(Employee.__module__))
+print("Employee.__bases__: {}".format(Employee.__bases__))
+print("Employee.__dict__: {}".format(Employee.__dict__))
