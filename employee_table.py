@@ -13,10 +13,10 @@ import MySQLdb
 db = MySQLdb.connect("localhost", "root", "", "TESTDB")
 
 # 使用cursur()方法获取操作游标
-cursur = db.cursur()
+cursor = db.cursor()
 
 # 如果数据表已经存在使用execute()方法删表
-cursur.execute("DROP TABLE IF EXISTS EMPLOYEE;")
+cursor.execute("DROP TABLE IF EXISTS EMPLOYEE;")
 
 # 创建数据表SQL语句
 sql = """CREATE TABLE EMPLOYEE (
@@ -27,7 +27,7 @@ SEX CHAR(1),
 INCOME FLOAT
 )"""
 
-cursur.execute(sql)
+cursor.execute(sql)
 
 # 关闭数据库连接
 db.close()
