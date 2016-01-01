@@ -1,4 +1,5 @@
-from django.conf.urls import *
+from django.conf urls import *
 from HelloWorld.view import hello
+from HelloWorld.testdb import testdb
 
-urlpatterns = patterns("", ('^hello/$', hello),)
+urlpatterns = patterns("", ('^hello/$', hello), ('^testdb/$', testdb),)
