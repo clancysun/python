@@ -7,7 +7,9 @@
 # Created Time: 2016-01-01 22:41:58
 ############################
 
-from django.http import HttpResponse
+from django.shortcuts import render
 
 def hello(requst):
-    return HttpResponse("Hello world!")
+    context = {}
+    context['hello'] = 'Hello World!'
+    return render(requst, 'hello.html', context)
