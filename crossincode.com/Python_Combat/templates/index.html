@@ -1,6 +1,8 @@
 $def with(movies)
+<h4>欢迎来到</h4>
 <h1>Quincey's Movie Site</h1>
+<hr>
 $for movie in movies:
     <li>
-        $movie['title'], $movie['year'], $movie['country'], $movie['abstract']
+        <a href="movie/$movie['id']">$movie['title']</a>
     </li>
