@@ -11,4 +11,5 @@ response = input()
 
 number = int(response)
 plusTen = number + 10
-print ("If we add 10 to your number, we get " + str(plusTen))
+plusTwenty = number + 20
+print ("If we add 10 to your number, we get {0} and {1}.".format(plusTen, plusTwenty))
